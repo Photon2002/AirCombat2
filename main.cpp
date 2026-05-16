@@ -7,7 +7,6 @@ int main() {
     sf::RenderWindow AirCombatWindow(sf::VideoMode(1920, 1080), "Air Combat 2");
     AirCombatWindow.setFramerateLimit(60);
     Airplane playerAirplane;
-
     enum GameState {
         MENU,
         GAME,
@@ -22,6 +21,9 @@ int main() {
     playerAirplane.airplaneSprite.setTexture(playerAirplane.airplaneTexture);
     playerAirplane.airplaneSprite.setScale({0.45f, 0.45f});
     playerAirplane.airplaneSprite.setPosition({playerAirplane.airplaneX, playerAirplane.airplaneY});
+    sf::Vector2f playerPosition = playerAirplane.airplaneSprite.getPosition();
+    sf::View mainCamera;
+
     while(AirCombatWindow.isOpen()) {
         sf::Event gameEvent {};
         while(AirCombatWindow.pollEvent(gameEvent)) {
@@ -31,9 +33,9 @@ int main() {
         if(gameMachine == GAME) {
             AirCombatWindow.clear(sf::Color(51,230,230));
             AirCombatWindow.draw(playerAirplane.airplaneSprite);
+            playerAirplane.airplaneSprite.move(playerPosition.x + playerAirplane.airplaneSpeed, 0);
             if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
                 gameMachine = MENU;
-
 
             if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
                 playerAirplane.airplaneSprite.move(5.f, 0.f);

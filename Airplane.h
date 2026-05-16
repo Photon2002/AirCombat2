@@ -19,6 +19,7 @@ public:
     float airplaneX;
     float airplaneY;
     int airplaneHealth;
+    float airplaneSpeed;
 };
 
 
