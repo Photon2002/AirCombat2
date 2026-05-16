@@ -1,0 +1,8 @@
+# ninja log v6
+28	855	8002985294455363	CMakeFiles/AirCombat2.dir/main.cpp.obj	c8279bf29561c91c
+2	236	8004710830362703	build.ninja	dd3fb8c74ba46ff0
+856	954	8002985302735629	AirCombat2.exe	a987ca5281968f67
+28	426	8002060146697358	CMakeFiles/AirCombat2.dir/Airplane.cpp.obj	f3195ff2dc4402a6
+28	515	8004710887068794	CMakeFiles/AirCombat2.dir/Airplane.cpp.obj	8efb5e4aaffb1c4f
+24	757	8004710887018753	CMakeFiles/AirCombat2.dir/main.cpp.obj	deb7ebad6bc40de3
+757	923	8004710894360120	AirCombat2.exe	a987ca5281968f67
