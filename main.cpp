@@ -33,6 +33,7 @@ int main() {
         if(gameMachine == GAME) {
             AirCombatWindow.clear(sf::Color(51,230,230));
             AirCombatWindow.draw(playerAirplane.airplaneSprite);
+            mainCamera.setCenter(static_cast<float>(playerAirplane.airplaneSprite.getTextureRect().left), static_cast<float>(playerAirplane.airplaneSprite.getTextureRect().top));
             playerAirplane.airplaneSprite.move(playerPosition.x + playerAirplane.airplaneSpeed, 0);
             if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
                 gameMachine = MENU;
@@ -69,6 +70,7 @@ int main() {
             if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
                 gameMachine = MENU;
         }
+        AirCombatWindow.setView(mainCamera);
         AirCombatWindow.display();
     }
     return 0;

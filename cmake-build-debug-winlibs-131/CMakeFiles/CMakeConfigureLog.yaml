@@ -615,3 +615,1039 @@ events:
       Running the CXX compiler's linker: "C:/winlibs-13.1/mingw64/x86_64-w64-mingw32/bin/ld.exe" "-v"
       GNU ld (Binutils for MinGW-W64 x86_64, built by Brecht Sanders) 2.40
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "dependencies/openAL/CMakeLists.txt:83 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-z0oam8"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-z0oam8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-z0oam8'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_268c6
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_268c6.dir/src.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-z0oam8/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_268c6.dir/src.c.obj -o cmTC_268c6.exe -Wl,--out-implib,libcmTC_268c6.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCXXSymbolExists.cmake:72 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "dependencies/openAL/CMakeLists.txt:180 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for __GLIBCXX__"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-3ag43d"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-3ag43d"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_LIBSTDCXX"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-3ag43d'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_b8fac
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\g++.exe   -std=gnu++20 -o CMakeFiles/cmTC_b8fac.dir/CheckSymbolExists.cxx.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-3ag43d/CheckSymbolExists.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\g++.exe   CMakeFiles/cmTC_b8fac.dir/CheckSymbolExists.cxx.obj -o cmTC_b8fac.exe -Wl,--out-implib,libcmTC_b8fac.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCXXSymbolExists.cmake:72 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "dependencies/openAL/CMakeLists.txt:181 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for _LIBCPP_VERSION"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-88lmg4"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-88lmg4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_LIBCXX"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-88lmg4'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_d8619
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\g++.exe   -std=gnu++20 -o CMakeFiles/cmTC_d8619.dir/CheckSymbolExists.cxx.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-88lmg4/CheckSymbolExists.cxx
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_d8619.dir/CheckSymbolExists.cxx.obj 
+        C:\\winlibs-13.1\\mingw64\\bin\\g++.exe   -std=gnu++20 -o CMakeFiles/cmTC_d8619.dir/CheckSymbolExists.cxx.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-88lmg4/CheckSymbolExists.cxx
+        C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-88lmg4/CheckSymbolExists.cxx: In function 'int main(int, char**)':
+        C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-88lmg4/CheckSymbolExists.cxx:8:19: error: '_LIBCPP_VERSION' was not declared in this scope
+            8 |   return ((int*)(&_LIBCPP_VERSION))[argc];
+              |                   ^~~~~~~~~~~~~~~
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCXXSymbolExists.cmake:72 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "dependencies/openAL/CMakeLists.txt:182 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for _MSVC_STL_UPDATE"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-4wd6wc"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-4wd6wc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_MSSTL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-4wd6wc'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_705d5
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\g++.exe   -std=gnu++20 -o CMakeFiles/cmTC_705d5.dir/CheckSymbolExists.cxx.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-4wd6wc/CheckSymbolExists.cxx
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_705d5.dir/CheckSymbolExists.cxx.obj 
+        C:\\winlibs-13.1\\mingw64\\bin\\g++.exe   -std=gnu++20 -o CMakeFiles/cmTC_705d5.dir/CheckSymbolExists.cxx.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-4wd6wc/CheckSymbolExists.cxx
+        C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-4wd6wc/CheckSymbolExists.cxx: In function 'int main(int, char**)':
+        C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-4wd6wc/CheckSymbolExists.cxx:8:19: error: '_MSVC_STL_UPDATE' was not declared in this scope
+            8 |   return ((int*)(&_MSVC_STL_UPDATE))[argc];
+              |                   ^~~~~~~~~~~~~~~~
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "dependencies/openAL/CMakeLists.txt:297 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_SHGETKNOWNFOLDERPATH_NO_NTDDI"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-lj7gi7"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-lj7gi7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_SHGETKNOWNFOLDERPATH_NO_NTDDI"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-lj7gi7'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_65d8a
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DHAVE_SHGETKNOWNFOLDERPATH_NO_NTDDI   -o CMakeFiles/cmTC_65d8a.dir/src.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-lj7gi7/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_65d8a.dir/src.c.obj -o cmTC_65d8a.exe -Wl,--out-implib,libcmTC_65d8a.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "dependencies/openAL/CMakeLists.txt:332 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test HAVE_LIBATOMIC"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-zxz1s5"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-zxz1s5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_LIBATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-zxz1s5'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_a64da
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\g++.exe -DHAVE_LIBATOMIC  -std=gnu++20 -o CMakeFiles/cmTC_a64da.dir/src.cxx.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-zxz1s5/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\g++.exe   CMakeFiles/cmTC_a64da.dir/src.cxx.obj -o cmTC_a64da.exe -Wl,--out-implib,libcmTC_a64da.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "dependencies/openAL/CMakeLists.txt:389 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_WTRAMPOLINES"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-si5ws6"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-si5ws6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_WTRAMPOLINES"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-si5ws6'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_d1f67
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DHAVE_WTRAMPOLINES  -Wtrampolines -o CMakeFiles/cmTC_d1f67.dir/src.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-si5ws6/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_d1f67.dir/src.c.obj -o cmTC_d1f67.exe -Wl,--out-implib,libcmTC_d1f67.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "dependencies/openAL/CMakeLists.txt:393 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_WCONVERSION"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-bw3uuu"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-bw3uuu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_WCONVERSION"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-bw3uuu'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_91fa6
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DHAVE_WCONVERSION  -Wconversion -o CMakeFiles/cmTC_91fa6.dir/src.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-bw3uuu/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_91fa6.dir/src.c.obj -o cmTC_91fa6.exe -Wl,--out-implib,libcmTC_91fa6.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "dependencies/openAL/CMakeLists.txt:397 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_WBIDI_CHARS_ANY"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-79dv8l"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-79dv8l"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_WBIDI_CHARS_ANY"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-79dv8l'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_dcc68
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DHAVE_WBIDI_CHARS_ANY  -Wbidi-chars=any -o CMakeFiles/cmTC_dcc68.dir/src.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-79dv8l/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_dcc68.dir/src.c.obj -o cmTC_dcc68.exe -Wl,--out-implib,libcmTC_dcc68.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "dependencies/openAL/CMakeLists.txt:401 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_WNO_INTERFERENCE_SIZE"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-l7z1d4"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-l7z1d4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_WNO_INTERFERENCE_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-l7z1d4'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_70fb9
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\g++.exe -DHAVE_WNO_INTERFERENCE_SIZE  -std=gnu++20   -Wno-interference-size -o CMakeFiles/cmTC_70fb9.dir/src.cxx.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-l7z1d4/src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\g++.exe   CMakeFiles/cmTC_70fb9.dir/src.cxx.obj -o cmTC_70fb9.exe -Wl,--out-implib,libcmTC_70fb9.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "dependencies/openAL/CMakeLists.txt:418 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_FTRIVIAL_AUTO_VAR_INIT"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-m1qpuz"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-m1qpuz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_FTRIVIAL_AUTO_VAR_INIT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-m1qpuz'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_d4209
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DHAVE_FTRIVIAL_AUTO_VAR_INIT  -ftrivial-auto-var-init=pattern -o CMakeFiles/cmTC_d4209.dir/src.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-m1qpuz/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_d4209.dir/src.c.obj -o cmTC_d4209.exe -Wl,--out-implib,libcmTC_d4209.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "dependencies/openAL/CMakeLists.txt:423 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_FNO_MATH_ERRNO"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-w2ae4n"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-w2ae4n"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_FNO_MATH_ERRNO"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-w2ae4n'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_a1455
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DHAVE_FNO_MATH_ERRNO  -fno-math-errno -o CMakeFiles/cmTC_a1455.dir/src.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-w2ae4n/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_a1455.dir/src.c.obj -o cmTC_a1455.exe -Wl,--out-implib,libcmTC_a1455.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckLinkerFlag.cmake:37 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckLinkerFlag.cmake:44 (cmake_check_linker_flag)"
+      - "dependencies/openAL/CMakeLists.txt:428 (check_linker_flag)"
+    checks:
+      - "Performing Test HAVE_WL_Z_NOEXECSTACK"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-8dcckx"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-8dcckx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_WL_Z_NOEXECSTACK"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-8dcckx'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_13366
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DHAVE_WL_Z_NOEXECSTACK   -o CMakeFiles/cmTC_13366.dir/src.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-8dcckx/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe  -Wl,-z,noexecstack CMakeFiles/cmTC_13366.dir/src.c.obj -o cmTC_13366.exe -Wl,--out-implib,libcmTC_13366.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        \x1b[31mFAILED: \x1b[0mcmTC_13366.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe  -Wl,-z,noexecstack CMakeFiles/cmTC_13366.dir/src.c.obj -o cmTC_13366.exe -Wl,--out-implib,libcmTC_13366.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        C:/winlibs-13.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: unrecognized option '-z'\x0d
+        C:/winlibs-13.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: use the --help option for usage information\x0d
+        collect2.exe: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckLinkerFlag.cmake:37 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckLinkerFlag.cmake:44 (cmake_check_linker_flag)"
+      - "dependencies/openAL/CMakeLists.txt:432 (check_linker_flag)"
+    checks:
+      - "Performing Test HAVE_WL_Z_RELRO"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-vracjd"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-vracjd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_WL_Z_RELRO"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-vracjd'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_c8191
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DHAVE_WL_Z_RELRO   -o CMakeFiles/cmTC_c8191.dir/src.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-vracjd/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe  -Wl,-z,relro CMakeFiles/cmTC_c8191.dir/src.c.obj -o cmTC_c8191.exe -Wl,--out-implib,libcmTC_c8191.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        \x1b[31mFAILED: \x1b[0mcmTC_c8191.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe  -Wl,-z,relro CMakeFiles/cmTC_c8191.dir/src.c.obj -o cmTC_c8191.exe -Wl,--out-implib,libcmTC_c8191.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        C:/winlibs-13.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: unrecognized option '-z'\x0d
+        C:/winlibs-13.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: use the --help option for usage information\x0d
+        collect2.exe: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckLinkerFlag.cmake:37 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckLinkerFlag.cmake:44 (cmake_check_linker_flag)"
+      - "dependencies/openAL/CMakeLists.txt:436 (check_linker_flag)"
+    checks:
+      - "Performing Test HAVE_WL_Z_NOW"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-tf0387"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-tf0387"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_WL_Z_NOW"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-tf0387'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_9d070
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DHAVE_WL_Z_NOW   -o CMakeFiles/cmTC_9d070.dir/src.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-tf0387/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe  -Wl,-z,now CMakeFiles/cmTC_9d070.dir/src.c.obj -o cmTC_9d070.exe -Wl,--out-implib,libcmTC_9d070.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        \x1b[31mFAILED: \x1b[0mcmTC_9d070.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe  -Wl,-z,now CMakeFiles/cmTC_9d070.dir/src.c.obj -o cmTC_9d070.exe -Wl,--out-implib,libcmTC_9d070.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        C:/winlibs-13.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: unrecognized option '-z'\x0d
+        C:/winlibs-13.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: use the --help option for usage information\x0d
+        collect2.exe: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckLinkerFlag.cmake:37 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckLinkerFlag.cmake:44 (cmake_check_linker_flag)"
+      - "dependencies/openAL/CMakeLists.txt:440 (check_linker_flag)"
+    checks:
+      - "Performing Test HAVE_WL_AS_NEEDED"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-2hfj2y"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-2hfj2y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_WL_AS_NEEDED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-2hfj2y'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_abf79
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DHAVE_WL_AS_NEEDED   -o CMakeFiles/cmTC_abf79.dir/src.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-2hfj2y/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe  -Wl,--as-needed,--no-copy-dt-needed-entries CMakeFiles/cmTC_abf79.dir/src.c.obj -o cmTC_abf79.exe -Wl,--out-implib,libcmTC_abf79.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "dependencies/openAL/CMakeLists.txt:520 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_MSSE2_SWITCH"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-e8ibu4"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-e8ibu4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_MSSE2_SWITCH"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-e8ibu4'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_28386
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DHAVE_MSSE2_SWITCH  -Werror   -msse2 -o CMakeFiles/cmTC_28386.dir/src.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-e8ibu4/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -Werror  CMakeFiles/cmTC_28386.dir/src.c.obj -o cmTC_28386.exe -Wl,--out-implib,libcmTC_28386.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "dependencies/openAL/CMakeLists.txt:533 (check_include_file)"
+    checks:
+      - "Looking for xmmintrin.h"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-sd2vjw"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-sd2vjw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_XMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-sd2vjw'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_c83a4
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_c83a4.dir/CheckIncludeFile.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-sd2vjw/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_c83a4.dir/CheckIncludeFile.c.obj -o cmTC_c83a4.exe -Wl,--out-implib,libcmTC_c83a4.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "dependencies/openAL/CMakeLists.txt:534 (check_include_file)"
+    checks:
+      - "Looking for emmintrin.h"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-lktat7"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-lktat7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_EMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-lktat7'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_dc2af
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_dc2af.dir/CheckIncludeFile.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-lktat7/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_dc2af.dir/CheckIncludeFile.c.obj -o cmTC_dc2af.exe -Wl,--out-implib,libcmTC_dc2af.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "dependencies/openAL/CMakeLists.txt:535 (check_include_file)"
+    checks:
+      - "Looking for pmmintrin.h"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-xtthmf"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-xtthmf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_PMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-xtthmf'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_3aa7d
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_3aa7d.dir/CheckIncludeFile.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-xtthmf/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_3aa7d.dir/CheckIncludeFile.c.obj -o cmTC_3aa7d.exe -Wl,--out-implib,libcmTC_3aa7d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "dependencies/openAL/CMakeLists.txt:536 (check_include_file)"
+    checks:
+      - "Looking for smmintrin.h"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-r353pv"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-r353pv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_SMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-r353pv'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_8bcaf
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_8bcaf.dir/CheckIncludeFile.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-r353pv/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_8bcaf.dir/CheckIncludeFile.c.obj -o cmTC_8bcaf.exe -Wl,--out-implib,libcmTC_8bcaf.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "dependencies/openAL/CMakeLists.txt:537 (check_include_file)"
+    checks:
+      - "Looking for arm_neon.h"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-jzzeol"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-jzzeol"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_ARM_NEON_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-jzzeol'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_7c613
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_7c613.dir/CheckIncludeFile.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-jzzeol/CheckIncludeFile.c
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_7c613.dir/CheckIncludeFile.c.obj 
+        C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_7c613.dir/CheckIncludeFile.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-jzzeol/CheckIncludeFile.c
+        C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-jzzeol/CheckIncludeFile.c:1:10: fatal error: arm_neon.h: No such file or directory
+            1 | #include <arm_neon.h>
+              |          ^~~~~~~~~~~~
+        compilation terminated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "dependencies/openAL/CMakeLists.txt:635 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_SSE_INTRINSICS"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-4n5x92"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-4n5x92"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_SSE_INTRINSICS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-4n5x92'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_9701b
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DHAVE_SSE_INTRINSICS   -o CMakeFiles/cmTC_9701b.dir/src.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-4n5x92/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_9701b.dir/src.c.obj -o cmTC_9701b.exe -Wl,--out-implib,libcmTC_9701b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "dependencies/openAL/CMakeLists.txt:643 (check_include_file)"
+    checks:
+      - "Looking for cpuid.h"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-fyz4sy"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-fyz4sy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_CPUID_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-fyz4sy'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_22ee8
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_22ee8.dir/CheckIncludeFile.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-fyz4sy/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_22ee8.dir/CheckIncludeFile.c.obj -o cmTC_22ee8.exe -Wl,--out-implib,libcmTC_22ee8.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "dependencies/openAL/CMakeLists.txt:644 (check_include_file)"
+    checks:
+      - "Looking for intrin.h"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-t6qdmf"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-t6qdmf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_INTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-t6qdmf'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_feb3b
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_feb3b.dir/CheckIncludeFile.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-t6qdmf/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_feb3b.dir/CheckIncludeFile.c.obj -o cmTC_feb3b.exe -Wl,--out-implib,libcmTC_feb3b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "dependencies/openAL/CMakeLists.txt:645 (check_include_file)"
+    checks:
+      - "Looking for guiddef.h"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-tljx54"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-tljx54"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_GUIDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-tljx54'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_b3c04
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_b3c04.dir/CheckIncludeFile.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-tljx54/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_b3c04.dir/CheckIncludeFile.c.obj -o cmTC_b3c04.exe -Wl,--out-implib,libcmTC_b3c04.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "dependencies/openAL/CMakeLists.txt:649 (check_library_exists)"
+    checks:
+      - "Looking for pow in m"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-bvy49l"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-bvy49l"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_LIBM"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-bvy49l'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_343a4
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   -DCHECK_FUNCTION_EXISTS=pow -o CMakeFiles/cmTC_343a4.dir/CheckFunctionExists.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-bvy49l/CheckFunctionExists.c
+        <command-line>: warning: conflicting types for built-in function 'pow'; expected 'double(double,  double)' [-Wbuiltin-declaration-mismatch]
+        C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-bvy49l/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-bvy49l/CheckFunctionExists.c:1:1: note: 'pow' is declared in header '<math.h>'
+          +++ |+#include <math.h>
+            1 | #ifdef CHECK_FUNCTION_EXISTS
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DCHECK_FUNCTION_EXISTS=pow  CMakeFiles/cmTC_343a4.dir/CheckFunctionExists.c.obj -o cmTC_343a4.exe -Wl,--out-implib,libcmTC_343a4.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lm  -latomic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "dependencies/openAL/CMakeLists.txt:658 (check_library_exists)"
+    checks:
+      - "Looking for clock_gettime in rt"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-5kw6m4"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-5kw6m4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_LIBRT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-5kw6m4'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_6d963
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   -DCHECK_FUNCTION_EXISTS=clock_gettime -o CMakeFiles/cmTC_6d963.dir/CheckFunctionExists.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-5kw6m4/CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DCHECK_FUNCTION_EXISTS=clock_gettime  CMakeFiles/cmTC_6d963.dir/CheckFunctionExists.c.obj -o cmTC_6d963.exe -Wl,--out-implib,libcmTC_6d963.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lrt  -latomic  -lm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        \x1b[31mFAILED: \x1b[0mcmTC_6d963.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DCHECK_FUNCTION_EXISTS=clock_gettime  CMakeFiles/cmTC_6d963.dir/CheckFunctionExists.c.obj -o cmTC_6d963.exe -Wl,--out-implib,libcmTC_6d963.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lrt  -latomic  -lm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        C:/winlibs-13.1/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lrt: No such file or directory\x0d
+        collect2.exe: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "dependencies/openAL/CMakeLists.txt:666 (check_include_file)"
+    checks:
+      - "Looking for dlfcn.h"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-ikj7xv"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-ikj7xv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_DLFCN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-ikj7xv'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_c2194
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_c2194.dir/CheckIncludeFile.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-ikj7xv/CheckIncludeFile.c
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_c2194.dir/CheckIncludeFile.c.obj 
+        C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_c2194.dir/CheckIncludeFile.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-ikj7xv/CheckIncludeFile.c
+        C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-ikj7xv/CheckIncludeFile.c:1:10: fatal error: dlfcn.h: No such file or directory
+            1 | #include <dlfcn.h>
+              |          ^~~~~~~~~
+        compilation terminated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "dependencies/openAL/CMakeLists.txt:667 (check_library_exists)"
+    checks:
+      - "Looking for dlopen in dl"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-a2fn6p"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-a2fn6p"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_LIBDL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-a2fn6p'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_08e26
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   -DCHECK_FUNCTION_EXISTS=dlopen -o CMakeFiles/cmTC_08e26.dir/CheckFunctionExists.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-a2fn6p/CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DCHECK_FUNCTION_EXISTS=dlopen  CMakeFiles/cmTC_08e26.dir/CheckFunctionExists.c.obj -o cmTC_08e26.exe -Wl,--out-implib,libcmTC_08e26.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -ldl  -latomic  -lm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "dependencies/openAL/CMakeLists.txt:680 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_GCC_GET_CPUID"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-w16hzy"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-w16hzy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_GCC_GET_CPUID"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-w16hzy'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_17943
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DHAVE_GCC_GET_CPUID   -o CMakeFiles/cmTC_17943.dir/src.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-w16hzy/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_17943.dir/src.c.obj -o cmTC_17943.exe -Wl,--out-implib,libcmTC_17943.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lm  -ldl  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "dependencies/openAL/CMakeLists.txt:688 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_CPUID_INTRINSIC"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-ufil84"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-ufil84"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_CPUID_INTRINSIC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-ufil84'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_68480
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe -DHAVE_CPUID_INTRINSIC   -o CMakeFiles/cmTC_68480.dir/src.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-ufil84/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_68480.dir/src.c.obj -o cmTC_68480.exe -Wl,--out-implib,libcmTC_68480.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lm  -ldl  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "dependencies/openAL/CMakeLists.txt:697 (check_symbol_exists)"
+    checks:
+      - "Looking for proc_pidpath"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-fw3rnw"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-fw3rnw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_PROC_PIDPATH"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-fw3rnw'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_d5b31
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_d5b31.dir/CheckSymbolExists.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-fw3rnw/CheckSymbolExists.c
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_d5b31.dir/CheckSymbolExists.c.obj 
+        C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_d5b31.dir/CheckSymbolExists.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-fw3rnw/CheckSymbolExists.c
+        C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-fw3rnw/CheckSymbolExists.c:2:10: fatal error: libproc.h: No such file or directory
+            2 | #include <libproc.h>
+              |          ^~~~~~~~~~~
+        compilation terminated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "dependencies/openAL/CMakeLists.txt:1202 (check_include_file)"
+    checks:
+      - "Looking for mmdeviceapi.h"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-gtzbsz"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-gtzbsz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_MMDEVICEAPI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-gtzbsz'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_a272e
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_a272e.dir/CheckIncludeFile.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-gtzbsz/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_a272e.dir/CheckIncludeFile.c.obj -o cmTC_a272e.exe -Wl,--out-implib,libcmTC_a272e.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lm  -ldl  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "dependencies/openAL/CMakeLists.txt:1219 (check_include_file)"
+    checks:
+      - "Looking for dsound.h"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-lrwnc2"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-lrwnc2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/openAL/cmake"
+    buildResult:
+      variable: "HAVE_DSOUND_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-lrwnc2'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_ed0ae
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_ed0ae.dir/CheckIncludeFile.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-lrwnc2/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_ed0ae.dir/CheckIncludeFile.c.obj -o cmTC_ed0ae.exe -Wl,--out-implib,libcmTC_ed0ae.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -latomic  -lm  -ldl  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "dependencies/SFML/src/SFML/Window/CMakeLists.txt:332 (check_include_file)"
+    checks:
+      - "Looking for dinput.h"
+    directories:
+      source: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-trghih"
+      binary: "C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-trghih"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Programowanie/C++/AirCombat2/dependencies/SFML/cmake/Modules/"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "13.0"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "C:/Programowanie/C++/AirCombat2/dependencies/SFML/cmake/CompilerOptionsOverride.cmake"
+    buildResult:
+      variable: "DINPUT_H_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-trghih'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe -v cmTC_6d075
+        [1/2] C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_6d075.dir/CheckIncludeFile.c.obj -c C:/Programowanie/C++/AirCombat2/cmake-build-debug-winlibs-131/CMakeFiles/CMakeScratch/TryCompile-trghih/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\winlibs-13.1\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_6d075.dir/CheckIncludeFile.c.obj -o cmTC_6d075.exe -Wl,--out-implib,libcmTC_6d075.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...

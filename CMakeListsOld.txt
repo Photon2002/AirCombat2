@@ -3,12 +3,10 @@ project(AirCombat2)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_subdirectory("dependencies/openAL")
+set(SFML_ROOT "C:/Libraries/SFML-2.6.2")
+set(SFML_DIR "${SFML_ROOT}/lib/cmake/SFML")
 
-set(OPENAL_INCLUDE_DIR OpenAL CACHE PATH "" FORCE)
-set(OPENAL_LIBRARY OpenAL CACHE STRING "" FORCE)
-
-add_subdirectory("dependencies/SFML")
+find_package(SFML 2.6 COMPONENTS system window graphics audio REQUIRED)
 
 add_executable(AirCombat2 main.cpp
         Airplane.cpp

@@ -1,3 +1,0 @@
-C:/C++/AirCombat2/cmake-build-debug/CMakeFiles/AirCombat2.dir
-C:/C++/AirCombat2/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/C++/AirCombat2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
